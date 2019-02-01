@@ -1,0 +1,13 @@
+{
+  "name": "shell",
+  "homepage": "https://shell.medieimperiet.dk/",
+  "authors": [
+    "Bo Skakke <bo@skakke.dk>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": ">=2.1.4"
+  },
+  "devDependencies": {}
+}

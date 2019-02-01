@@ -1,0 +1,23 @@
+ 
+@mixin installFont($family, $src, $style: normal, $weight: 'normal') {
+  @font-face {
+    font-family: "#{$family}";
+    src:
+      url("#{$src}.woff2") format("woff2"),
+      url("#{$src}.woff") format("woff");
+    font-weight: #{$weight};
+    font-style: #{$style};
+ }
+}
+
+@include installFont('Solido', '../fonts/Solido-Book', 'normal',400);
+
+@include installFont('Solido', '../fonts/Solido-Bold', 'normal',700);
+
+/*@include installFont('Solido Condensed', '../fonts/SolidoCondensed-Book', 'normal',400);
+@include installFont('Solido Condensed', '../fonts/SolidoCondensed-Medium', 'normal',500);
+@include installFont('Solido Condensed', '../fonts/SolidoCondensed-Bold', 'normal',600);
+@include installFont('Solido Condensed', '../fonts/SolidoCondensed-ExtraBold', 'normal',700);*/
+
+
+
